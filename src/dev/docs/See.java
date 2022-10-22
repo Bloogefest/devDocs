@@ -5,7 +5,7 @@ import java.lang.annotation.RetentionPolicy;
 
 /**
  * @author Bloogefest
- * @version 1.1
+ * @version 1.0
  * @apiNote Not specified
  * @since 1.0.0
  */
@@ -13,6 +13,5 @@ import java.lang.annotation.RetentionPolicy;
 public @interface See {
 
     String value() default "Not specified";
-
 
 }
