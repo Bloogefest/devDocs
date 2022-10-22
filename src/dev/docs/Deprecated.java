@@ -5,7 +5,7 @@ import java.lang.annotation.RetentionPolicy;
 
 /**
  * @author Bloogefest
- * @version 1.0
+ * @version 1.1
  * @apiNote Not specified
  * @since 1.0.0
  */
@@ -17,5 +17,7 @@ public @interface Deprecated {
     String when() default "Not specified";
 
     String why() default "Not specified";
+
+    boolean removable() default false;
 
 }
