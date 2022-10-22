@@ -7,12 +7,13 @@ import java.lang.annotation.RetentionPolicy;
  * @author Bloogefest
  * @version 1.0
  * @apiNote Not specified
- * @since 1.0.0
+ * @since 1.0.2
  */
 @Retention(RetentionPolicy.RUNTIME)
-public @interface See {
+public @interface Returns {
 
-    String value() default "Not specified";
+    Class<?> value();
 
+    String what() default "Not specified";
 
 }
